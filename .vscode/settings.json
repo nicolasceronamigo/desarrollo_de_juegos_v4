@@ -67,5 +67,5 @@
         "*.sln": "*.csproj",
         "*.slnx": "*.csproj"
     },
-    "dotnet.defaultSolution": "desarrollo_de_juegos_v2.slnx"
+    "dotnet.defaultSolution": "desarrollo_de_juegos_v4.slnx"
 }
