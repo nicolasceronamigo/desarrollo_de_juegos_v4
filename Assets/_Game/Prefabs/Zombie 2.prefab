@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 6467511664872502058}
   - component: {fileID: 769362584360810490}
   - component: {fileID: 7521172917603442222}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: HealthCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -126,7 +126,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3450898459647479265}
   - component: {fileID: 7527884512185380280}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Slider
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -216,7 +216,7 @@ GameObject:
   - component: {fileID: 2733887851912336687}
   - component: {fileID: 106635720046761302}
   - component: {fileID: 8490960895958140042}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Background
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -297,7 +297,7 @@ GameObject:
   - component: {fileID: 8101866743074273366}
   - component: {fileID: 5736165950034495421}
   - component: {fileID: 6666202527150305911}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Zombie 2
   m_TagString: Enemy
   m_Icon: {fileID: 0}
@@ -485,6 +485,13 @@ MonoBehaviour:
   rotationOffset: 0
   wobbleSpeed: 12
   wobbleAngle: 10
+  obstacleCheckDistance: 1.2
+  zombieBlockerLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  zombieLayer:
+    serializedVersion: 2
+    m_Bits: 128
 --- !u!95 &8101866743074273366
 Animator:
   serializedVersion: 7
@@ -637,7 +644,7 @@ GameObject:
   - component: {fileID: 4004871039477853332}
   - component: {fileID: 4617924359968267314}
   - component: {fileID: 418005178583098975}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fill
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -710,7 +717,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8618871933498694966}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Fill Area
   m_TagString: Untagged
   m_Icon: {fileID: 0}

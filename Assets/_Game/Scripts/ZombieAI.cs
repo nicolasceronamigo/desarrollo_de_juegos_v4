@@ -19,6 +19,10 @@ public class ZombieAI : MonoBehaviour
     private Transform player;
     private NavMeshAgent agent;
 
+    [SerializeField] private float obstacleCheckDistance = 0.6f;
+    [SerializeField] private LayerMask zombieBlockerLayer;
+    [SerializeField] private LayerMask zombieLayer;
+
     void Start()
     {
         agent = GetComponent<NavMeshAgent>();
@@ -50,8 +54,15 @@ public class ZombieAI : MonoBehaviour
         {
             if (agent.isOnNavMesh)
             {
-                agent.isStopped = false;
-                agent.SetDestination(player.position); // ¡NavMesh calcula el camino solo!
+                if (HayObstaculoDelante())
+                {
+                    agent.isStopped = true;
+                }
+                else
+                {
+                    agent.isStopped = false;
+                    agent.SetDestination(player.position);
+                }
             }
 
             ControlarRotacionYAnimacion();
@@ -93,6 +104,37 @@ public class ZombieAI : MonoBehaviour
         {
             player = null;
         }
+    }
+
+    private bool HayObstaculoDelante()
+    {
+        Vector2 direccion = agent.velocity.normalized;
+
+        if (direccion.sqrMagnitude < 0.01f)
+            return false;
+
+        float radioZombie = 0.35f;
+
+        int capasBloqueadoras = zombieBlockerLayer | zombieLayer;
+
+        RaycastHit2D[] impactos = Physics2D.CircleCastAll(
+            transform.position,
+            radioZombie,
+            direccion,
+            obstacleCheckDistance,
+            capasBloqueadoras
+        );
+
+        foreach (RaycastHit2D impacto in impactos)
+        {
+            // Ignorar el propio collider del zombie
+            if (impacto.collider.gameObject == gameObject)
+                continue;
+
+            return true;
+        }
+
+        return false;
     }
 
     private void OnDrawGizmosSelected()
