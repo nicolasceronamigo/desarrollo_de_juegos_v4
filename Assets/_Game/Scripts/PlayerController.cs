@@ -11,6 +11,10 @@ public class PlayerController : MonoBehaviour
     public float fireRate = 0.15f; // Velocidad de la ráfaga
     private float nextFireTime = 0f;
 
+    [Header("Efectos de Sonido (SFX)")]
+    public AudioClip shootSound;   // Aquí arrastrarás tu audio de disparo
+    private AudioSource audioSource;
+
     private Rigidbody2D rb;
     private Camera mainCam;
     private Vector2 moveInput;
@@ -20,6 +24,15 @@ public class PlayerController : MonoBehaviour
     {
         rb = GetComponent<Rigidbody2D>();
         mainCam = Camera.main;
+        
+        // Obtenemos el componente AudioSource automáticamente del jugador
+        audioSource = GetComponent<AudioSource>();
+        if (audioSource == null)
+        {
+            // Si no lo tiene puesto, se lo agregamos por código de seguridad
+            audioSource = gameObject.AddComponent<AudioSource>();
+            audioSource.spatialBlend = 0f; // Sonido 2D
+        }
     }
 
     void Update()
@@ -59,6 +72,12 @@ public class PlayerController : MonoBehaviour
         if (bulletPrefab != null && firePoint != null)
         {
             Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+        }
+
+        // REPRODUCIR EL SONIDO DE DISPARO
+        if (audioSource != null && shootSound != null)
+        {
+            audioSource.PlayOneShot(shootSound);
         }
     }
 }

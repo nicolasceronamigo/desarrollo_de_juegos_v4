@@ -11,7 +11,7 @@ public class PlayerHealth : MonoBehaviour
     public Slider healthSlider;
     public CanvasGroup healthUIGroup; 
     public float showDuration = 3f;   
-    private float hideTimer;          
+    private float hideTimer;            
 
     [Header("Daño y Colisiones")]
     public float damageFromZombies = 20f;
@@ -70,6 +70,29 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
+    public void Heal(float amount)
+    {
+        currentHealth += amount;
+        
+        if (currentHealth > maxHealth) 
+        {
+            currentHealth = maxHealth;
+        }
+
+        if (healthSlider != null)
+        {
+            healthSlider.value = currentHealth;
+        }
+
+        if (healthUIGroup != null)
+        {
+            healthUIGroup.alpha = 1f;
+            hideTimer = showDuration;
+        }
+
+        Debug.Log("¡Jugador curado! Vida actual: " + currentHealth);
+    }
+
     private void OnCollisionStay2D(Collision2D collision)
     {
         if (collision.gameObject.CompareTag("Enemy"))
@@ -82,27 +105,23 @@ public class PlayerHealth : MonoBehaviour
         }
     }
 
-    // ====== ZONA DE MUERTE: GAME OVER Y DESAPARICIÓN ======
     private void Die()
     {
         currentHealth = 0;
-        Debug.Log("El jugador ha muerto. Activando menú de Game Over.");
-
-        // 1. Activamos el menú de Game Over a través del gestor en la escena
-        GameOverManager gameOver = FindFirstObjectByType<GameOverManager>();
+        
+        // CORREGIDO: Usamos FindAnyObjectByType para evitar la advertencia en Unity
+        GameOverManager gameOver = FindAnyObjectByType<GameOverManager>();
         if (gameOver != null)
         {
             gameOver.MostrarGameOver();
         }
 
-        // 2. Reproducir sonido de muerte antes de ocultar el objeto (si tiene un AudioSource)
         AudioSource audioSource = GetComponent<AudioSource>();
         if (audioSource != null && audioSource.enabled)
         {
             audioSource.Play();
         }
 
-        // 3. Desactivamos por completo el GameObject del jugador para que desaparezca
         gameObject.SetActive(false);
     }
 }
