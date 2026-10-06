@@ -1,0 +1,561 @@
+fileFormatVersion: 2
+guid: 393c6f4aaade597458454099234ae23c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 9057671918689429583
+    second: Concrete044B_1K-JPG_Color_0
+  - first:
+      213: 6007529407489518890
+    second: Concrete044B_1K-JPG_Color_1
+  - first:
+      213: -6831736532840691551
+    second: Concrete044B_1K-JPG_Color_2
+  - first:
+      213: 1564269132517673079
+    second: Concrete044B_1K-JPG_Color_3
+  - first:
+      213: 3698784554534629245
+    second: Concrete044B_1K-JPG_Color_4
+  - first:
+      213: -3912019593901705129
+    second: Concrete044B_1K-JPG_Color_5
+  - first:
+      213: 3789620244714872497
+    second: Concrete044B_1K-JPG_Color_6
+  - first:
+      213: -2058157731884140612
+    second: Concrete044B_1K-JPG_Color_7
+  - first:
+      213: -3095968549011501574
+    second: Concrete044B_1K-JPG_Color_8
+  - first:
+      213: 4931627578635077935
+    second: Concrete044B_1K-JPG_Color_9
+  - first:
+      213: 8367607161015572319
+    second: Concrete044B_1K-JPG_Color_10
+  - first:
+      213: -4854678955002229595
+    second: Concrete044B_1K-JPG_Color_11
+  - first:
+      213: 4194705548020670926
+    second: Concrete044B_1K-JPG_Color_12
+  - first:
+      213: 248548993817684086
+    second: Concrete044B_1K-JPG_Color_13
+  - first:
+      213: 8387618337332448210
+    second: Concrete044B_1K-JPG_Color_14
+  - first:
+      213: 3060605915987002790
+    second: Concrete044B_1K-JPG_Color_15
+  - first:
+      213: -1407312509658525090
+    second: Concrete044B_1K-JPG_Color_16
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3583
+        width: 513
+        height: 513
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f48a385de9053bd70800000000000000
+      internalID: 9057671918689429583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3063
+        width: 513
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a2d2027ba280f5350800000000000000
+      internalID: 6007529407489518890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_2
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 3063
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a8c8f8c1dbc031a0800000000000000
+      internalID: -6831736532840691551
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_3
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 3063
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 77803d8fc7665b510800000000000000
+      internalID: 1564269132517673079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_4
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 3063
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d7fecb194f8b45330800000000000000
+      internalID: 3698784554534629245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2543
+        width: 513
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 758fe17f7e6b5b9c0800000000000000
+      internalID: -3912019593901705129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_6
+      rect:
+        serializedVersion: 2
+        x: 518
+        y: 2542
+        width: 516
+        height: 516
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bedbd7c88f679430800000000000000
+      internalID: 3789620244714872497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_7
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 2543
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb7725b8274ff63e0800000000000000
+      internalID: -2058157731884140612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_8
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 2543
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: afd43600209e805d0800000000000000
+      internalID: -3095968549011501574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_9
+      rect:
+        serializedVersion: 2
+        x: 2079
+        y: 2543
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f2940156729a07440800000000000000
+      internalID: 4931627578635077935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_10
+      rect:
+        serializedVersion: 2
+        x: 2599
+        y: 2543
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5719542166bf1470800000000000000
+      internalID: 8367607161015572319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2023
+        width: 513
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5ac078c2637b0acb0800000000000000
+      internalID: -4854678955002229595
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_12
+      rect:
+        serializedVersion: 2
+        x: 519
+        y: 2023
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ec1e12fa876963a30800000000000000
+      internalID: 4194705548020670926
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_13
+      rect:
+        serializedVersion: 2
+        x: 1039
+        y: 2023
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 678a8c53ef5037300800000000000000
+      internalID: 248548993817684086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_14
+      rect:
+        serializedVersion: 2
+        x: 1559
+        y: 2023
+        width: 514
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2dbc044307ec66470800000000000000
+      internalID: 8387618337332448210
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1503
+        width: 513
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a54dd36dd4797a20800000000000000
+      internalID: 3060605915987002790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Concrete044B_1K-JPG_Color_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 983
+        width: 513
+        height: 514
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e5217dd8ab8387ce0800000000000000
+      internalID: -1407312509658525090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      Concrete044B_1K-JPG_Color_0: 9057671918689429583
+      Concrete044B_1K-JPG_Color_1: 6007529407489518890
+      Concrete044B_1K-JPG_Color_10: 8367607161015572319
+      Concrete044B_1K-JPG_Color_11: -4854678955002229595
+      Concrete044B_1K-JPG_Color_12: 4194705548020670926
+      Concrete044B_1K-JPG_Color_13: 248548993817684086
+      Concrete044B_1K-JPG_Color_14: 8387618337332448210
+      Concrete044B_1K-JPG_Color_15: 3060605915987002790
+      Concrete044B_1K-JPG_Color_16: -1407312509658525090
+      Concrete044B_1K-JPG_Color_2: -6831736532840691551
+      Concrete044B_1K-JPG_Color_3: 1564269132517673079
+      Concrete044B_1K-JPG_Color_4: 3698784554534629245
+      Concrete044B_1K-JPG_Color_5: -3912019593901705129
+      Concrete044B_1K-JPG_Color_6: 3789620244714872497
+      Concrete044B_1K-JPG_Color_7: -2058157731884140612
+      Concrete044B_1K-JPG_Color_8: -3095968549011501574
+      Concrete044B_1K-JPG_Color_9: 4931627578635077935
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
