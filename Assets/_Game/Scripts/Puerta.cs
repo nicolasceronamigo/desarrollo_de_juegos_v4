@@ -5,6 +5,10 @@ public class Puerta : MonoBehaviour
     private BoxCollider2D boxCollider;
     private bool estaAbierta = false;
 
+    [SerializeField] private AudioSource audioSource;
+    [SerializeField] private AudioClip sonidoAbrir;
+    [SerializeField] private AudioClip sonidoCerrar;
+
     public bool EstaAbierta => estaAbierta;
 
     [SerializeField] private float anguloPuertaAbierta = 90f;
@@ -42,6 +46,7 @@ public class Puerta : MonoBehaviour
         }
     }
 
+
     private void AlternarPuerta()
     {
         estaAbierta = !estaAbierta;
@@ -52,11 +57,21 @@ public class Puerta : MonoBehaviour
         {
             transform.rotation = rotacionCerrada * Quaternion.Euler(0, 0, anguloPuertaAbierta);
 
+            if (audioSource != null && sonidoAbrir != null)
+            {
+                audioSource.PlayOneShot(sonidoAbrir, 5.0f);
+            }
+
             Debug.Log("Puerta abierta");
         }
         else
         {
             transform.rotation = rotacionCerrada;
+
+            if (audioSource != null && sonidoCerrar != null)
+            {
+                audioSource.PlayOneShot(sonidoCerrar, 5.0f);
+            }
 
             Debug.Log("Puerta cerrada");
         }

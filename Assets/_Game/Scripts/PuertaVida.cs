@@ -8,6 +8,16 @@ public class PuertaVida : MonoBehaviour
     private float vidaActual;
     private Puerta puerta;
 
+    [Header("Sonido de destrucción")]
+    [SerializeField] private AudioClip sonidoDestruccion;
+    [SerializeField] private float volumenDestruccion = 1f;
+
+    [Header("Sonido de daño")]
+    [SerializeField] private AudioClip sonidoDanio;
+    [SerializeField] private float volumenDanio = 1f;
+
+private AudioSource audioDanio;
+
     [Header("Daño por zombies")]
     [SerializeField] private float distanciaDeteccion = 1.5f;
     [SerializeField] private int zombiesNecesarios = 2;
@@ -37,6 +47,18 @@ public class PuertaVida : MonoBehaviour
         if (cantidadZombies >= zombiesNecesarios)
         {
             RecibirDanio(danoPorSegundo * Time.deltaTime);
+
+            if (audioDanio != null && sonidoDanio != null && !audioDanio.isPlaying)
+            {
+                audioDanio.Play();
+            }
+        }
+        else
+        {
+            if (audioDanio != null && audioDanio.isPlaying)
+            {
+                audioDanio.Stop();
+            }
         }
     }
 
@@ -44,6 +66,14 @@ public class PuertaVida : MonoBehaviour
     {
         vidaActual = vidaMaxima;
         puerta = GetComponent<Puerta>();
+        audioDanio = gameObject.AddComponent<AudioSource>();
+        audioDanio.clip = sonidoDanio;
+        audioDanio.volume = volumenDanio;
+        audioDanio.spatialBlend = 1f;
+        audioDanio.rolloffMode = AudioRolloffMode.Linear;
+        audioDanio.minDistance = 1f;
+        audioDanio.maxDistance = 75f;
+        audioDanio.loop = true;
     }
 
     public void RecibirDanio(float cantidad)
@@ -61,6 +91,25 @@ public class PuertaVida : MonoBehaviour
     private void DestruirPuerta()
     {
         Debug.Log("¡La puerta fue destruida!");
+
+        if (sonidoDestruccion != null)
+        {
+            GameObject objetoSonido = new GameObject("SonidoDestruccionPuerta");
+
+            objetoSonido.transform.position = transform.position;
+
+            AudioSource audioSource = objetoSonido.AddComponent<AudioSource>();
+
+            audioSource.clip = sonidoDestruccion;
+            audioSource.volume = volumenDestruccion;
+            audioSource.spatialBlend = 1f;
+            audioSource.rolloffMode = AudioRolloffMode.Linear;
+            audioSource.minDistance = 1f;
+            audioSource.maxDistance = 75f;
+            audioSource.Play();
+
+            Destroy(objetoSonido, sonidoDestruccion.length);
+        }
 
         Destroy(gameObject);
     }

@@ -165,7 +165,7 @@ SpriteRenderer:
   m_SortingOrder: 4
   m_MaskInteraction: 0
   m_Sprite: {fileID: -8727925049552395661, guid: f899c7dc1ed3d894194a6e7f28cb82ce, type: 3}
-  m_Color: {r: 1, g: 0.9803922, b: 0.9803922, a: 1}
+  m_Color: {r: 0.6981132, g: 0.42689303, b: 0, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -250,8 +250,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 57edef45c89059e4bb216dc557b9fe78, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::EnemyHealth
-  maxHealth: 100
+  maxHealth: 70
   minHealthToShowBar: 0
+  isBoss: 0
+  damageToPlayer: 28
   healthSlider: {fileID: 6381020754686368464}
   fillImage: {fileID: 3555030038940586098}
   fullHealthColor: {r: 0, g: 1, b: 0, a: 1}
@@ -274,7 +276,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b6f29249807e6d4f866341f2eb41658, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::ZombieAI
-  speed: 2
+  speed: 6.2
   detectionRange: 500
   stoppingDistance: 1.1
   rotationOffset: 0

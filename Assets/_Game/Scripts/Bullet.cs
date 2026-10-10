@@ -1,3 +1,5 @@
+//Bullet.cs
+
 using UnityEngine;
 
 public class Bullet : MonoBehaviour
@@ -5,6 +7,11 @@ public class Bullet : MonoBehaviour
     public float speed = 45f;
     public float lifeTime = 2f;
     public float damage = 10f; // Cada bala quita 10
+
+    public void ConfigurarDano(float nuevoDano)
+    {
+        damage = nuevoDano;
+    }
 
     void Start()
     {

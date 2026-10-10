@@ -1,0 +1,615 @@
+fileFormatVersion: 2
+guid: 388a26aace3cf2a46816f741f3128f02
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 5093064592540002965
+    second: tileset_entorno_0
+  - first:
+      213: 7936870564197168828
+    second: tileset_entorno_1
+  - first:
+      213: 2597902059146512845
+    second: tileset_entorno_2
+  - first:
+      213: 1909966797021219129
+    second: tileset_entorno_3
+  - first:
+      213: -336152019889498832
+    second: tileset_entorno_4
+  - first:
+      213: 8025555277473829309
+    second: tileset_entorno_5
+  - first:
+      213: 8394474466951542543
+    second: tileset_entorno_6
+  - first:
+      213: -4117074437628350805
+    second: tileset_entorno_7
+  - first:
+      213: -8392844251512289351
+    second: tileset_entorno_8
+  - first:
+      213: -7860621035132239618
+    second: tileset_entorno_9
+  - first:
+      213: -344158210915250996
+    second: tileset_entorno_10
+  - first:
+      213: 7633271724455027028
+    second: tileset_entorno_11
+  - first:
+      213: -5980770812745063139
+    second: tileset_entorno_12
+  - first:
+      213: -4766934619070493122
+    second: tileset_entorno_13
+  - first:
+      213: 2811607253085879727
+    second: tileset_entorno_14
+  - first:
+      213: 3072826244455163169
+    second: tileset_entorno_15
+  - first:
+      213: -5765623126245005995
+    second: tileset_entorno_16
+  - first:
+      213: 1237809424827397222
+    second: tileset_entorno_17
+  - first:
+      213: -4868843442387606002
+    second: tileset_entorno_18
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 512
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationMethod: 0
+  spriteTessellationDetail: -1
+  spriteGeometrySubdivision: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: tileset_entorno_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3584
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 59a677043433ea640800000000000000
+      internalID: 5093064592540002965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_1
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 3064
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6f93f0abd652e60800000000000000
+      internalID: 7936870564197168828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_2
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 3064
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dc90fa4982a9d0420800000000000000
+      internalID: 2597902059146512845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_3
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 3064
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9398d35bea0918a10800000000000000
+      internalID: 1909966797021219129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_4
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 3064
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 035d4f7d48fb55bf0800000000000000
+      internalID: -336152019889498832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2544
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: db1d61fe000806f60800000000000000
+      internalID: 8025555277473829309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_6
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2544
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f07bbb64d0a2f7470800000000000000
+      internalID: 8394474466951542543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_7
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2544
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bae2257bc963dd6c0800000000000000
+      internalID: -4117074437628350805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_8
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2544
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9b74e65de90a68b80800000000000000
+      internalID: -8392844251512289351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_9
+      rect:
+        serializedVersion: 2
+        x: 2080
+        y: 2544
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ef0cafed0d679e290800000000000000
+      internalID: -7860621035132239618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_10
+      rect:
+        serializedVersion: 2
+        x: 2600
+        y: 2544
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cccccdb3eed493bf0800000000000000
+      internalID: -344158210915250996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_11
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 2024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 451ec2ac034dee960800000000000000
+      internalID: 7633271724455027028
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_12
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d156e4f12a8000da0800000000000000
+      internalID: -5980770812745063139
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_13
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 2024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e3e8ac2683278ddb0800000000000000
+      internalID: -4766934619070493122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_14
+      rect:
+        serializedVersion: 2
+        x: 1560
+        y: 2024
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fad781076e5d40720800000000000000
+      internalID: 2811607253085879727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 1504
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1256f35503fd4aa20800000000000000
+      internalID: 3072826244455163169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 984
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 555a36370546cffa0800000000000000
+      internalID: -5765623126245005995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_17
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 984
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 664b77a1d159d2110800000000000000
+      internalID: 1237809424827397222
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: tileset_entorno_18
+      rect:
+        serializedVersion: 2
+        x: 1040
+        y: 984
+        width: 512
+        height: 512
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e062f757fa46e6cb0800000000000000
+      internalID: -4868843442387606002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 0c26341c289586b4492c19dfe3302a4b
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":512.0,"y":512.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":8.0,"y":8.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":1,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      tileset_entorno_0: 5093064592540002965
+      tileset_entorno_1: 7936870564197168828
+      tileset_entorno_10: -344158210915250996
+      tileset_entorno_11: 7633271724455027028
+      tileset_entorno_12: -5980770812745063139
+      tileset_entorno_13: -4766934619070493122
+      tileset_entorno_14: 2811607253085879727
+      tileset_entorno_15: 3072826244455163169
+      tileset_entorno_16: -5765623126245005995
+      tileset_entorno_17: 1237809424827397222
+      tileset_entorno_18: -4868843442387606002
+      tileset_entorno_2: 2597902059146512845
+      tileset_entorno_3: 1909966797021219129
+      tileset_entorno_4: -336152019889498832
+      tileset_entorno_5: 8025555277473829309
+      tileset_entorno_6: 8394474466951542543
+      tileset_entorno_7: -4117074437628350805
+      tileset_entorno_8: -8392844251512289351
+      tileset_entorno_9: -7860621035132239618
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

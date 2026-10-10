@@ -5,31 +5,27 @@ public class EnemyHealth : MonoBehaviour
 {
     [Header("Configuración de Vida")]
     public float maxHealth = 100f;
-    [Tooltip("Si la vida máxima es menor o igual a este valor, no mostrará barra flotante")]
     public float minHealthToShowBar = 30f;
     private float currentHealth;
     private bool isDead = false;
 
+    [Header("Configuración de Jefe")]
+    public bool isBoss = false; 
+    public float damageToPlayer = 20f;
+    
     [Header("UI")]
     public Slider healthSlider;
     public Image fillImage;
-
-    [Header("Colores de Barra")]
     public Color fullHealthColor = Color.green;
     public Color mediumHealthColor = Color.yellow;
     public Color lowHealthColor = Color.red;
-
-    [Header("Efectos de Muerte (Gore SAS)")]
+    
+    [Header("Efectos")]
     public GameObject bloodSplatPrefab;      
     public GameObject bloodParticlesPrefab;  
-
-    [Header("Botín (Loot)")]
     public GameObject medkitPrefab; 
-    [Range(0f, 100f)] 
     public float medkitDropChance = 20f; 
-
-    [Header("Efectos de Sonido (SFX)")]
-    public AudioClip deathSound; // Sonido de muerte del zombi
+    public AudioClip deathSound; 
 
     private Animator anim;
     private Rigidbody2D rb;
@@ -50,14 +46,12 @@ public class EnemyHealth : MonoBehaviour
             healthSlider.value = currentHealth;
             healthSlider.gameObject.SetActive(false);
         }
-
         UpdateHealthVisuals();
     }
 
     public void TakeDamage(float damage)
     {
         if (isDead) return;
-
         currentHealth -= damage;
 
         if (healthSlider != null && maxHealth > minHealthToShowBar)
@@ -67,51 +61,32 @@ public class EnemyHealth : MonoBehaviour
             UpdateHealthVisuals();
         }
 
-        if (currentHealth <= 0)
-        {
-            Die();
-        }
+        if (currentHealth <= 0) Die();
     }
 
     void UpdateHealthVisuals()
     {
         if (fillImage == null) return;
-
         float healthRatio = currentHealth / maxHealth;
-
-        if (healthRatio > 0.5f)
-        {
-            fillImage.color = Color.Lerp(mediumHealthColor, fullHealthColor, (healthRatio - 0.5f) * 2f);
-        }
-        else
-        {
-            fillImage.color = Color.Lerp(lowHealthColor, mediumHealthColor, healthRatio * 2f);
-        }
+        if (healthRatio > 0.5f) fillImage.color = Color.Lerp(mediumHealthColor, fullHealthColor, (healthRatio - 0.5f) * 2f);
+        else fillImage.color = Color.Lerp(lowHealthColor, mediumHealthColor, healthRatio * 2f);
     }
 
     void Die()
     {
         isDead = true;
-
         if (healthSlider != null) healthSlider.gameObject.SetActive(false);
-
-        if (bloodSplatPrefab != null)
-        {
-            Quaternion randomRot = Quaternion.Euler(0f, 0f, Random.Range(0f, 360f));
-            Instantiate(bloodSplatPrefab, transform.position, randomRot);
-        }
-
+        if (bloodSplatPrefab != null) Instantiate(bloodSplatPrefab, transform.position, Quaternion.Euler(0f, 0f, Random.Range(0f, 360f)));
         if (bloodParticlesPrefab != null) Instantiate(bloodParticlesPrefab, transform.position, Quaternion.identity);
 
-        // AUDIO DE MUERTE FORZADO Y AMPLIADO
         if (deathSound != null)
         {
             GameObject tempAudioObj = new GameObject("TempAudio_ZombieDeath");
             tempAudioObj.transform.position = transform.position;
             AudioSource aSource = tempAudioObj.AddComponent<AudioSource>();
             aSource.clip = deathSound;
-            aSource.spatialBlend = 0f; // 2D para que se escuche fuerte
-            aSource.volume = 2.5f;     // Forzamos volumen alto
+            aSource.spatialBlend = 0f; 
+            aSource.volume = 2.5f;     
             aSource.Play();
             Destroy(tempAudioObj, 1f); 
         }
@@ -124,16 +99,20 @@ public class EnemyHealth : MonoBehaviour
         if (sr != null) sr.enabled = false;
         if (anim != null) anim.enabled = false;
 
-        if (medkitPrefab != null)
+        if (medkitPrefab != null && Random.Range(0f, 100f) <= medkitDropChance) 
         {
-            float randomRoll = Random.Range(0f, 100f); 
-            if (randomRoll <= medkitDropChance) 
-            {
-                Instantiate(medkitPrefab, transform.position, Quaternion.identity);
-            }
+            Instantiate(medkitPrefab, transform.position, Quaternion.identity);
         }
 
-        if (GameManager.Instance != null) GameManager.Instance.AddScore(10); 
+        // --- MAGIA: DETECTA AL JEFE Y ACTIVA LA VICTORIA ---
+        if (isBoss || gameObject.name.Contains("Boss"))
+        {
+            if (GameManager.Instance != null) GameManager.Instance.MostrarVictoria();
+        }
+        else
+        {
+            if (GameManager.Instance != null) GameManager.Instance.AddScore(10); 
+        }
 
         Destroy(gameObject, 0.5f);
     }

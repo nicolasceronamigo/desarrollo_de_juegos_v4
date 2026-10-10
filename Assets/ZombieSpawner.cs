@@ -41,4 +41,12 @@ public class ZombieSpawner : MonoBehaviour
             newZombie.transform.position = selectedSpawn.position;
         }
     }
+
+    // NUEVA FUNCIÓN: Se llama desde el GameManager cuando sale el Jefe
+    public void ActivarHordaFinal(float nuevoIntervalo)
+    {
+        spawnInterval = nuevoIntervalo; 
+        timer = spawnInterval; // Fuerza a que salga un zombi inmediatamente
+        Debug.Log("¡Horda final activada! Los zombis salen cada " + spawnInterval + " segundos.");
+    }
 }

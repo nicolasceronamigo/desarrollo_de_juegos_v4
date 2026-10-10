@@ -99,7 +99,19 @@ public class PlayerHealth : MonoBehaviour
         {
             if (Time.time >= lastDamageTime + invulnerabilityTime)
             {
-                TakeDamage(damageFromZombies);
+                // 1. Asumimos el daño normal por defecto
+                float damageToTake = damageFromZombies; 
+
+                // 2. Leemos las estadísticas de este enemigo en específico
+                EnemyHealth enemyStats = collision.gameObject.GetComponent<EnemyHealth>();
+                
+                // 3. Si tiene el script EnemyHealth, usamos su daño personalizado
+                if (enemyStats != null)
+                {
+                    damageToTake = enemyStats.damageToPlayer; 
+                }
+
+                TakeDamage(damageToTake);
                 lastDamageTime = Time.time;
             }
         }
@@ -109,7 +121,6 @@ public class PlayerHealth : MonoBehaviour
     {
         currentHealth = 0;
         
-        // CORREGIDO: Usamos FindAnyObjectByType para evitar la advertencia en Unity
         GameOverManager gameOver = FindAnyObjectByType<GameOverManager>();
         if (gameOver != null)
         {

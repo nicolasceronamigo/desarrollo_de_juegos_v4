@@ -1,3 +1,5 @@
+// PlayerController.cs
+
 using UnityEngine;
 
 public class PlayerController : MonoBehaviour
@@ -9,6 +11,15 @@ public class PlayerController : MonoBehaviour
     public GameObject bulletPrefab;
     public Transform firePoint;
     public float fireRate = 0.15f; // Velocidad de la ráfaga
+    [Header("Mejora de daño")]
+    [SerializeField] private float danoBase = 10f;
+    [SerializeField] private float aumentoPorMejora = 2f;
+    [SerializeField] private int nivelMejora = 0;
+
+    public float DanoActual
+    {
+        get { return danoBase + nivelMejora * aumentoPorMejora; }
+    }
     private float nextFireTime = 0f;
 
     [Header("Efectos de Sonido (SFX)")]
@@ -71,7 +82,18 @@ public class PlayerController : MonoBehaviour
     {
         if (bulletPrefab != null && firePoint != null)
         {
-            Instantiate(bulletPrefab, firePoint.position, firePoint.rotation);
+            GameObject nuevaBala = Instantiate(
+                bulletPrefab,
+                firePoint.position,
+                firePoint.rotation
+            );
+
+            Bullet bullet = nuevaBala.GetComponent<Bullet>();
+
+            if (bullet != null)
+            {
+                bullet.ConfigurarDano(DanoActual);
+            }
         }
 
         // REPRODUCIR EL SONIDO DE DISPARO
@@ -79,5 +101,14 @@ public class PlayerController : MonoBehaviour
         {
             audioSource.PlayOneShot(shootSound);
         }
+    }
+    public void MejorarDano()
+    {
+        nivelMejora++;
+
+        Debug.Log(
+            "Nivel de mejora: " + nivelMejora +
+            " | Daño actual: " + DanoActual
+        );
     }
 }
